@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
   validates :title, presence: true
-  validates :content, length: {in: 6..19}
+  validates :content, length: {minimum: 6}
 
 
 end
